@@ -1,0 +1,14 @@
+/* App.css */
+
+.content-container {
+ 
+  overflow-x: hidden;
+  display: flex;
+  margin-top: 18px;
+}
+
+@media screen and (max-width: 600px) {
+
+  
+
+}
