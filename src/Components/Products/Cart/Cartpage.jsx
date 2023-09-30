@@ -11,9 +11,9 @@ const Cartpage = () => {
   };
   return (
     <div>
-      <div className="product-cards-container">
+      <div  className="product-cards-container">
         {cartItems.map((product, index) => (
-          <div className="product-card" key={index}>
+          <div style={{marginLeft:"100px"}} className="product-card" key={index}>
             <div className="product-image-container">
               <img
                 src={product.image}
@@ -24,7 +24,7 @@ const Cartpage = () => {
             <h2>{product.price}</h2>
             <h3>{product.name}</h3>
             <p>{product.data1}</p>
-            <button onClick={() => handleRemoveFromCart(product.id)}>
+            <button style={{backgroundColor:"#6db0e7", padding:"10px 30px", color:"white", border:"1px solid #6db0e7 "}} onClick={() => handleRemoveFromCart(product.id)}>
               Delete
             </button>
           </div>
